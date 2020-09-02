@@ -1,3 +1,9 @@
+.response{
+    max-width: 1000px;
+    max-height: auto;
+    padding: 25px;
+    margin: auto;
+}
 body{
     margin: 0 auto;
     background-color:whitesmoke;
@@ -64,16 +70,7 @@ body{
 .mainmenu > ul > li:hover .drop{
     display: block;
 }
-.banner{
-    width: 1000px;
-    height: auto;
-}
-.banner img{
-    width: 1000px;
-    height: 500px;
-    float: center;
-    overflow: hidden;
-}
+
 hr{
     margin-top: 0cm;
     margin-bottom: 0cm;
@@ -83,13 +80,15 @@ hr{
     align-content: center;
     width: 50%;
     background-color: thistle;
-    
+  
 }
 p{
          text-align: justify;
          font-size: 20px;
          margin: 5px;
          font-family: sans-serif;
+         background-color: rgb(255, 255, 0);
+         margin-top: 20px;
 }
 .content{
     margin-bottom: 15px;
@@ -101,8 +100,8 @@ p{
     padding-top: 10px;
     height: 500px;
     width: 300px;
-    box-shadow: 0px 0px 100px purple;
-    
+    box-shadow: 0px 0px 10000px purple;
+   
 }
 .content h2{
     font-family: sans-serif;
@@ -111,7 +110,7 @@ p{
 }
 
 .intro{
-    background-color:yellowgreen;
+    background-color:rgb(49, 47, 47);
    
 }
 .card{
@@ -135,3 +134,56 @@ button{
     width: 100%;
     background-color: thistle;
 }
+
+
+/* <!--image slider--> */
+
+.slider {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 1500px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -500px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -1000px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: blue;
+  }
+/* 
+  <!--image slider--> */
