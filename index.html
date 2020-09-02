@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Panch Parmeshwar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="response">
     <div class="container">
             <header>
                         <div class="logo"><!--logo-->
@@ -47,14 +48,27 @@
                         </div><!--navigation bar-->
             <header>
         
-            <section class="banner cycle-slideshow"><!--banner slider-->
-                        <img src="img1.jfif" alt="banner1">
-                        <img src="img2.jpg" alt="banner2">
-                        <img src="im3.jpg" alt="banner1">
-                        <img src="im4.jpg" alt="banner2">
-                        <img src="im5.jfif" alt="banner1">
-                      
-            </section><!--banner slider-->
+
+<!--image slider-->
+
+                <div class="slider">
+                    <span id="slide-1"></span>
+                    <span id="slide-2"></span>
+                    <span id="slide-3"></span>
+                    <div class="image-container">
+                      <img src="img1.jfif" class="slide" width="500" height="300" />
+                      <img src="im4.jpg" class="slide" width="500" height="300" />
+                      <img src="im5.jfif" class="slide" width="500" height="300" />
+                    </div>
+                    <div class="buttons">
+                      <a href="#slide-1"></a>
+                      <a href="#slide-2"></a>
+                      <a href="#slide-3"></a>
+                    </div>
+                  </div>
+
+<!--image slider-->
+    
         <hr size="50%" color="black">  
         <section class="notice" title="NOTICE BOARD">
             <article class="content">
@@ -70,13 +84,10 @@
                 slowing the spread of this virus and prevent overwhelming our medical system
                 and endangering the lives of those most vulnerable.  All the basic items would
                 be sold @<b><strike>100</strike> 50 Only</b> .
-                                        
-    
-                        
             </p>
         </article>
         </section>
-
+  
      <!--picture+ content --> 
 
 <div class="intro" >
@@ -108,7 +119,8 @@
      <!--picture+ content --> 
 
     </div>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script> -->
+</div>
 </body>
 </html>
